@@ -1,0 +1,244 @@
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+a {
+    color: #24948A;
+}
+a:focus, a:hover {
+
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: none;
+    font-weight: bold;
+    color: #555555;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+    padding-bottom: 20px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    color: #24948A;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 986px;
+    }
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+/* Form */
+
+.hero-unit {
+    padding: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    color: inherit;
+    background-color: #eeeeee;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+}
+
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.tx_find .navigation h1 {
+    color: #24948A;
+    border-bottom: 5px solid #eeeeee;
+    padding: 0 0 0.5em 0;
+    margin-top: 0;
+}
+
+.tx_find form .fieldContainer .inputContainer {
+    margin-left: 0;
+}
+
+.tx_find form .fieldContainer input {
+    background: white;
+}
+
+.tx_find form .field-default input {
+    border-bottom-color: #b3b3b3;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #b3b3b3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #b3b3b3;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #b3b3b3;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tx_find form .controls {
+    float: right;
+}
+
+.tx_find form .submit {
+    float: right;
+    background: #24948A;
+    color: white;
+    border: none;
+    text-shadow: none;
+}
+
+.tx_find .facets {
+    background: #eeeeee;
+    padding: 20px
+}
+
+.invisible {
+    display: none;
+}
+
+.tx_find .results .navigation {
+    margin-bottom: 0;
+}
+
+.tx_find .resultCount {
+    background: none;
+    font-weight: bold;
+    color: #555555;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+    padding: 15px;
+}
+
+.tx_find .results .navigation h1 {
+    color: #24948A;
+    border-bottom: 5px solid #eeeeee;
+    padding: 0 0 0.5em 0;
+    margin: 0;
+}
+
+.tx_find .results ul.resultList {
+    margin: 2em 220px 0 0;
+    padding-left: 0;
+}
+
+.tx_find .results ul.resultList li {
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    display: block;
+}
+
+.tx_find .results ul.resultList h1 {
+    margin: 0;
+    font-size: 133%;
+    line-height: 133%;
+}
+
+.tx_find .results ul.resultList p {
+    margin-bottom: 0;
+}
+
+.tx_find .results ul.resultList li:target, .tx_find .results .facet-type-Tabs ul.resultList li.facetActive:target, .tx_find .facet-type-Tabs .results ul.resultList li.facetActive:target {
+    background: #eeeeff;
+    border-radius: 7px;
+    transition: background .5s ease-in-out;
+}
+
+.tx_find .results ul.resultList li:target, .tx_find .results .facet-type-Tabs ul.resultList li.facetActive:target, .tx_find .facet-type-Tabs .results ul.resultList li.facetActive:target {
+    background: transparent;
+}

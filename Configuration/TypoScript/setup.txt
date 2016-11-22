@@ -1,0 +1,73 @@
+page = PAGE
+page {
+    config {
+        metaCharset = utf-8
+        additionalHeaders = Content-Type:text/html;charset=utf-8
+        baseURL = /
+    }
+    10 = FLUIDTEMPLATE
+    10 {
+        template = FILE
+        template.file = EXT:slub_find_neutral/Resources/Private/Page/Templates/Default.html
+        layoutRootPaths {
+            10 = EXT:slub_find_neutral/Resources/Private/Page/Layouts
+        }
+        partialRootPaths {
+            10 = EXT:slub_find_neutral/Resources/Private/Page/Partials
+        }
+        variables {
+            content < styles.content.get
+            content.select.where = colPos = 0
+        }
+    }
+    includeCSS.roboto = https://fonts.googleapis.com/css?family=Roboto
+    includeCSS.roboto.external = 1
+    includeCSS.roboto.excludeFromConcatenation = 1
+    includeCSS.bootstrapcdn = https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+    includeCSS.bootstrapcdn.external = 1
+    includeCSS.bootstrapcdn.excludeFromConcatenation = 1
+    javascriptLibs.jQuery = 1
+    includeJS.find = EXT:slub_find_neutral/Resources/Public/JavaScript/find.js
+}
+
+plugin.tx_find {
+    settings {
+        languageRootPath = EXT:slub_find_neutral/Resources/Private/Language/
+        CSSPaths.30 = EXT:slub_find_neutral/Resources/Public/Css/Styles.css
+        facets {
+            10 {
+                id = author
+                field = author_facet
+                query = author_facet:"%s"
+                blacklist {
+                    10 = not assigned
+                }
+            }
+            20 {
+                id = topic
+                field = topic_facet
+                query = topic_facet:"%s"
+            }
+        }
+        standardFields {
+            title = title
+            snippet = imprint
+        }
+    }
+    view {
+        templateRootPath >
+        templateRootPaths {
+            0 = {$plugin.tx_find.view.templateRootPath}
+            1 = EXT:slub_find_neutral/Resources/Private/Find/Templates/
+        }
+        partialRootPath >
+        partialRootPaths {
+            0 = {$plugin.tx_find.view.partialRootPath}
+            1 = EXT:slub_find_neutral/Resources/Private/Find/Partials/
+        }
+        layoutRootPath >
+        layoutRootPaths {
+            0 = {$plugin.tx_find.view.layoutRootPath}
+        }
+    }
+}
